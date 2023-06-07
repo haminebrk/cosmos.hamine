@@ -1,0 +1,121 @@
+  img {
+  	height: 400px;
+  	width: 620px;
+  }
+
+  html {
+  	font-size: 19px;
+  }
+
+  html {
+  	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a:hover {
+  	font-style: italic;
+  }
+
+  body {
+  	color: white
+  }
+
+  body {
+  	background: url("../../image/galaxie fond.jpg") no-repeat fixed center center;
+  	background-size: cover;
+  }
+
+  
+body 
+{margin: 0;}
+
+  .container {
+  	min-height: 100vh;
+  	display: grid;
+  	grid-template-columns: repeat(6, 1fr);
+  	grid-template-rows: auto;
+  	grid-template-areas:
+  		"header header header header header header"
+  		"main main main main main nav"
+  		"footer footer footer footer footer footer"
+  		"aside aside aside aside aside aside"
+  		"po po po po po po"
+  		"pa pa pa pa pa pa"
+  		"pi pi pi pi pi pi"
+  		"pu pu pu pu pu pu"
+  		"pz pz pz pz pz pz"
+  		"ptdr ptdr ptdr ptdr ptdr ptdr"
+  		"ca ca ca ca ca ca";
+  }
+
+  header {
+  	grid-area: header;
+  }
+
+  main {
+  	grid-area: main;
+  }
+
+  footer {
+  	grid-area: footer;
+  }
+
+  aside {
+  	grid-area: aside;
+  }
+
+  nav {
+  	grid-area: nav;
+  }
+
+  .po {
+  	grid-area: po;
+  }
+
+  .pa {
+  	grid-area: pa;
+  }
+
+  .pi {
+  	grid-area: pi;
+  }
+
+  .pu {
+  	grid-area: pu;
+  }
+
+  .pz {
+  	grid-area: pz;
+  }
+
+  .ptdr {
+  	grid-area: ptdr;
+  }
+
+  .ca {
+  	grid-area: ca;
+  }
+
+  @media screen and (max-width:800px) {
+  	.container {
+  		grid-template-columns: repeat(6, 1fr);
+  		grid-template-rows: auto;
+  		grid-template-areas:
+  			"header header header header header header"
+  			"nav nav nav nav nav nav"
+  			"main main main main main main"
+  			"footer footer footer footer footer footer"
+  			"aside aside aside aside aside aside"
+  			"po po po po po po"
+  			"pa pa pa pa pa pa"
+  			"pi pi pi pi pi pi"
+  			"pu pu pu pu pu pu"
+  			"pz pz pz pz pz pz"
+  			"ptdr ptdr ptdr ptdr ptdr ptdr"
+  			"ca ca ca ca ca ca";
+  	}
+
+  	img {
+  		width: 300px;
+  		height: 300px;
+  	}
+  }

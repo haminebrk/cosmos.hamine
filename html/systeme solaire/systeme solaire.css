@@ -1,0 +1,635 @@
+ /*systeme Solaire*/
+ body {
+   margin: 0;
+ }
+
+ .solaire {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main main"
+     "footer footer footer footer footer aside";
+ }
+
+
+ header {
+   grid-area: header;
+ }
+
+ main {
+   grid-area: main;
+ }
+
+ footer {
+   grid-area: footer;
+ }
+
+ aside {
+   grid-area: aside;
+ }
+
+ @media screen and (max-width:500px) {
+   .solaire {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+       "aside aside aside aside aside aside"
+       "main main main main main main"
+       "footer footer footer footer footer footer"
+     ;
+   }
+ }
+
+
+
+ div.planet-small img {/*mercure venus terre mars*/
+   width: 50px;
+   height: 50px;
+ }
+
+ div.planet-medium img {/*neptune urANUS hahah*/
+   width: 75px;
+   height: 75px;
+ }
+
+ div.planet-large img {/*saturne jupiter*/
+   width: 100px;
+   height: 100px;
+ }
+
+ div.planet-extra-large img {/*soleil*/
+   width: 140px;
+   height: 140px;
+ }
+
+ .planet {
+   width: 100px;
+   height: 100px;
+   margin: 20px;/*pour l espace entre les planetes */
+   border-radius: 50%;/*definis un rayon de bordure pour rendre les planetes circulaire*/
+   background-size: cover;/*ca permet que les planetes s adapte a l arrire plan*/
+   display: flex;/*les planetes seront libre hahahaha  */
+   justify-content: center;/*centre les planetes horrizontal*/
+   align-items: center;/*centre les planetes verticalment*/
+ }
+
+
+ .planets {
+   display: flex;/*ca permet que les planetes peuvent "bouger"et reste pas au meme endroit si l ecran ce reduis*/
+   flex-wrap: wrap;/*ca permet que les planetes s alligne si l ecran ce reduis*/
+   justify-content: space-between;/*il y aura un espace equitable entre chaque planete  */
+ }
+
+ /*systeme Solaire*/
+
+
+ /*soleil*/
+
+ body {
+   margin: 0;
+ }
+
+ .soleil {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main aside"
+     "footer footer footer footer footer footer"
+     "nav nav nav nav nav nav ";
+ }
+
+ .header {
+   grid-area: header;
+ }
+
+ .nav {
+   grid-area: nav;
+ }
+
+ .main {
+   grid-area: main;
+ }
+
+ .footer {
+   grid-area: footer;
+ }
+
+ .aside {
+   grid-area: aside;
+ }
+
+ @media screen and (max-width:900px) {
+   .soleil {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+       "aside aside aside aside aside aside"
+       "main main main main main main"
+       "footer footer footer footer footer footer"
+       "nav nav nav nav nav nav";
+   }
+   .sole{
+    height: 300px;
+    width: 300px;
+   }
+
+ }
+
+ /*soleil*/
+
+
+ /*mercure*/
+
+ body {
+   margin: 0;
+ }
+
+ .mercure {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main aside"
+     "footer footer footer footer footer footer";
+ }
+
+ .header {
+   grid-area: header;
+ }
+
+ .main {
+   grid-area: main;
+ }
+
+ .footer {
+   grid-area: footer;
+ }
+
+ .aside {
+   grid-area: aside;
+ }
+
+ @media screen and (max-width:800px) {
+   .mercure {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+       "aside aside aside aside aside aside"
+       "main main main main main main"
+       "footer footer footer footer footer footer";
+   }
+
+   .mercurie {
+     width: 280px;
+     height: 150px;
+   }
+
+   .mercu {
+     width: 300px;
+     height: 220px;
+   }
+
+ }
+
+
+
+ /*mercure*/
+
+ /*venus*/
+
+ body {
+   margin: 0;
+ }
+
+ .venus {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main aside"
+     "footer footer footer footer footer aside";
+ }
+
+ .header {
+   grid-area: header;
+ }
+
+ .main {
+   grid-area: main;
+ }
+
+ .footer {
+   grid-area: footer;
+ }
+
+ .aside {
+   grid-area: aside;
+ }
+
+ @media screen and (max-width:800px) {
+   .venus {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+       "aside aside aside aside aside aside"
+       "main main main main main main"
+       "footer footer footer footer footer footer";
+   }
+   .venu{
+    height: 300px;
+    width: 300px;
+   }
+ }
+
+ /*Venus*/
+
+
+ /*terre*/
+ body {
+   margin: 0;
+ }
+
+ .terre {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main aside"
+     "footer footer footer footer footer footer";
+ }
+
+ .header {
+   grid-area: header;
+ }
+
+ .main {
+   grid-area: main;
+ }
+
+ .footer {
+   grid-area: footer;
+ }
+
+ .aside {
+   grid-area: aside;
+ }
+
+ @media screen and (max-width:800px) {
+   .terre {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+       "aside aside aside aside aside aside"
+       "main main main main main main"
+       "footer footer footer footer footer footer";
+   }
+
+    .terr {
+     height: 300px;
+     width: 300px;
+   }
+ }
+
+ /*terre*/
+
+ /*mars*/
+ body {
+   margin: 0;
+ }
+
+ .mars {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main aside"
+     "footer footer footer footer footer footer "
+     "nav nav nav nav nav nav ";
+ }
+
+ .header {
+   grid-area: header;
+ }
+
+ .main {
+   grid-area: main;
+ }
+
+ .footer {
+   grid-area: footer;
+ }
+
+ .aside {
+   grid-area: aside;
+ }
+
+ .nav {
+   grid-area: nav;
+ }
+
+ @media screen and (max-width:800px) {
+   .mars {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+       "aside aside aside aside aside aside"
+       "main main main main main main"
+       "footer footer footer footer footer footer"
+       "nav nav nav nav nav nav";
+   }
+   .mar {
+    height:250px ;
+    width:300px ;
+   }
+ }
+
+
+ /*Mars*/
+
+ /*jupiter*/
+ body {
+   margin: 0;
+ }
+
+ .jupiter {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main nav"
+     "footer footer footer footer footer footer"
+     "aside aside aside aside aside aside";
+ }
+
+ .header {
+   grid-area: header;
+ }
+
+ .main {
+   grid-area: main;
+ }
+
+ .footer {
+   grid-area: footer;
+ }
+
+ .aside {
+   grid-area: aside;
+ }
+
+ .nav {
+   grid-area: nav;
+ }
+
+ @media screen and (max-width:900px) {
+   .jupiter {
+
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+       "nav nav nav nav nav nav"
+       "main main main main main main"
+       "footer footer footer footer footer footer"
+       "aside aside aside aside aside aside";
+
+   }
+
+   .satelite {
+     height: 190px;
+     width: 300px;
+   }
+
+   .jupi {
+     height: 300px;
+     width: 300px;
+
+   }
+
+   .schemajupi {
+     height: 300px;
+     width: 300px;
+   }
+
+ }
+
+
+ /*jupiter*/
+
+
+
+ /*saturne*/
+ body {
+   margin: 0;
+ }
+
+ .saturne {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main  nav"
+     "footer footer footer footer footer footer";
+ }
+
+ .header {
+   grid-area: header;
+ }
+
+ .main {
+   grid-area: main;
+ }
+
+ .footer {
+   grid-area: footer;
+ }
+
+ .nav {
+   grid-area: nav;
+ }
+
+ @media screen and (max-width:800px) {
+   .saturne {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+       "nav nav nav nav nav nav"
+       "main main main main main main"
+       "footer footer footer footer footer footer";
+   }
+
+   .sat {
+     width: 250px;
+     height: 300px;
+   }
+
+   .schemasatu {
+     width: 300px;
+     height: 250px;
+   }
+ }
+
+ /*saturne*/
+
+ /*Uranus*/
+ body {
+   margin: 0;
+ }
+
+ .uranus {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main aside"
+     "footer footer footer footer footer footer";
+ }
+
+ .header {
+   grid-area: header;
+ }
+
+ .nav {
+   grid-area: nav;
+ }
+
+ .main {
+   grid-area: main;
+ }
+
+ .footer {
+   grid-area: footer;
+ }
+
+ .aside {
+   grid-area: aside;
+ }
+
+ @media screen and (max-width:800px) {
+   .uranus {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+       "aside aside aside aside aside aside"
+       "main main main main main main"
+       "footer footer footer footer footer footer";
+   }
+
+   .anus {
+     width: 300px;
+     height: 300px;
+   }
+
+ }
+
+
+ /*uranus*/
+
+ /*neptune*/
+ body {
+   margin: 0;
+ }
+
+ .neptune {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main aside"
+     "footer footer footer footer footer footer";
+ }
+
+ .header {
+   grid-area: header;
+ }
+
+ .main {
+   grid-area: main;
+ }
+
+ .footer {
+   grid-area: footer;
+ }
+
+ .aside {
+   grid-area: aside;
+ }
+
+ @media screen and (max-width:800px) {
+   .neptune {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto;
+     grid-template-areas:
+       "header header header header header header"
+       "aside aside aside aside aside aside"
+       "main main main main main main"
+       "footer footer footer footer footer footer";
+   }
+   .nept{
+    height: 250px;
+    width: 300px;
+   }
+ }
+
+ /*neptune*/
+ body {
+   background: url("../../image/galaxie\ fond.jpg") no-repeat fixed center center;
+   background-size: cover;
+ }
+
+ a:hover {
+   font-style: italic;
+ }
+
+ 
+ html {
+   font-family: Arial, Helvetica, sans-serif;/*je sais pas ce que ca fait mais sans serif c'est moche hahahah*/
+ }
+
+ body {
+   color: white
+ }
+
+ .sun {
+   position: relative;
+   left: 50px;
+ }
+
+ .test {
+   background-color: black;
+
+ }
+
+ html {
+  font-size: 19px;
+}
