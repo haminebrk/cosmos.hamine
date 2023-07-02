@@ -1,0 +1,273 @@
+ /*systeme Solaire*/
+ body {
+   margin: 0;
+ }
+
+ .solaire {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto;
+   grid-template-areas:
+     "header header header header header nav"
+     "main main main main main main"
+     "footer footer footer footer footer footer" ;
+ }
+
+
+ header {
+   grid-area: header;
+ }
+
+ main {
+   grid-area: main;
+ }
+
+ footer {
+   grid-area: footer;
+ }
+
+ nav{
+  grid-area: nav;
+ }
+
+
+ @media screen and (max-width:500px) {
+   .solaire {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+       "nav nav nav nav nav nav"
+       "main main main main main main"
+       "footer footer footer footer footer footer"
+     ;
+   }
+ }
+
+
+
+ div.planet-small img {/*mercure venus terre mars*/
+   width: 50px;
+   height: 50px;
+ }
+
+ div.planet-medium img {/*neptune urANUS hahah*/
+   width: 75px;
+   height: 75px;
+ }
+
+ div.planet-large img {/*saturne jupiter*/
+   width: 100px;
+   height: 100px;
+ }
+
+ div.planet-extra-large img {/*soleil*/
+   width: 140px;
+   height: 140px;
+ }
+
+ .planet {
+   width: 100px;
+   height: 100px;
+   margin: 20px;/*pour l espace entre les planetes */
+   border-radius: 50%;/*definis un rayon de bordure pour rendre les planetes circulaire*/
+   background-size: cover;/*ca permet que les planetes s adapte a l arrire plan*/
+   display: flex;/*les planetes seront libre hahahaha  */
+   justify-content: center;/*centre les planetes horrizontal*/
+   align-items: center;/*centre les planetes verticalment*/
+ }
+
+
+ .planets {
+   display: flex;/*ca permet que les planetes peuvent "bouger"et reste pas au meme endroit si l ecran ce reduis*/
+   flex-wrap: wrap;/*ca permet que les planetes s alligne si l ecran ce reduis*/
+   justify-content: space-between;/*il y aura un espace equitable entre chaque planete  */
+ }
+
+ /*systeme Solaire*/
+
+
+ /*soleil*/
+
+ body {
+   margin: 0;
+ }
+
+ .grille {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: auto auto auto;
+   grid-template-areas:
+     "header header header header header header"
+     "main main main main main nav"
+     "footer footer footer footer footer footer";
+ }
+
+ .header {
+   grid-area: header;
+ }
+
+ .nav {
+   grid-area: nav;
+ }
+
+ .main {
+   grid-area: main;
+ }
+
+ .footer {
+   grid-area: footer;
+ }
+
+ @media screen and (max-width:900px) {
+   .grille {
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: auto auto auto auto;
+     grid-template-areas:
+       "header header header header header header"
+        "nav nav nav nav nav nav"
+       "main main main main main main"
+       "footer footer footer footer footer footer"
+      ;
+
+}
+
+/*accueil*/
+.accueil{
+  height: 300px;
+  width: 300px;
+}
+/*accueil/
+
+    /*planete*/
+   .mercurie {
+    width: 280px;
+    height: 150px;
+  }
+
+  .mercu {
+    width: 300px;
+    height: 220px;
+  }
+   .sole{
+    height: 300px;
+    width: 300px;
+   }
+
+   .venu{
+    height: 300px;
+    width: 300px;
+   }
+
+   .terr {
+    height: 300px;
+    width: 300px;
+  }
+
+  .mar {
+    height:250px ;
+    width:300px ;
+   }
+
+
+   
+   .satelite {
+    height: 190px;
+    width: 300px;
+  }
+
+  .jupi {
+    height: 300px;
+    width: 300px;
+
+  }
+
+  .schemajupi {
+    height: 300px;
+    width: 300px;
+  }
+
+  .sat {
+    width: 250px;
+    height: 300px;
+  }
+
+  .schemasatu {
+    width: 300px;
+    height: 250px;
+  }
+  .anus {
+    width: 300px;
+    height: 300px;
+  }
+
+  .nept{
+    height: 250px;
+    width: 300px;
+   }
+/*planete*/
+   /*trou noir */
+   .trou {
+		height: 250px;
+		width: 300px;
+		}
+   /*trou noir */
+/*espace */
+  .espace{
+		width: 300px;
+		height: 400px;
+	  }
+    /*espace */
+    /*Photo*/
+    .photo {
+  		width: 300px;
+  		height: 300px;
+  	}
+    /*Photo*/
+
+
+  }
+
+body {
+  background: url("../image/galaxiefond.jpg") no-repeat fixed center center;
+  background-size: cover;
+}
+
+a:hover {
+  font-style: italic;
+  color: rgb(87, 86, 86);
+
+}
+
+
+html {
+  font-family: Arial, Helvetica, sans-serif;/*je sais pas ce que ca fait mais sans serif c'est moche hahahah*/
+}
+
+body {
+  color: white
+}
+
+.sun {
+  position: relative;
+  left: 50px;
+}
+
+.test {
+  background-color: black;
+
+}
+
+html {
+ font-size: 19px;
+}
+
+audio{
+	margin-top:1.5rem;
+}
+
+a{
+color: rgb(32, 30, 143);
+}
